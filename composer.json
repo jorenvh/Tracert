@@ -1,0 +1,20 @@
+{
+    "name": "jorenvanhocht/tracert",
+    "description": "Laravel package to log the users actions in the database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joren Van Hocht",
+            "email": "vanhochtjoren@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "jorenvanhocht\\Tracert\\": "src/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    }
+}
