@@ -1,9 +1,9 @@
-<?php namespace jorenvanhocht\Tracert\Migrations;
+<?php
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHistoryTable extends Migration {
+class CreateTracertHistoryTable extends Migration {
 
     protected $config;
 
