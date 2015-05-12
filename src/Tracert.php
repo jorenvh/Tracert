@@ -31,7 +31,7 @@ class Tracert
     {
         $this->db = $db;
         $this->history = $history;
-        $this->config = objectify(config('tracert'));
+        $this->config = objectify(config('Tracert'));
     }
 
 

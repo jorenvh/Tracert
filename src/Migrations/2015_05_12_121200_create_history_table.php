@@ -9,7 +9,7 @@ class CreateHistoryTable extends Migration {
 
     public function __construct()
     {
-        $this->config = objectify(config('tracert'));
+        $this->config = objectify(config('Tracert'));
     }
 
     /**

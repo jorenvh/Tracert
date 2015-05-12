@@ -22,7 +22,7 @@ class History extends Model{
     public function __construct()
     {
         parent::__construct([]);
-        $this->table = config('tracert')['table'];
+        $this->table = config('Tracert')['table'];
     }
 
 }
