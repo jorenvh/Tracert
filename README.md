@@ -8,7 +8,7 @@ Tracert is a package for Laravel to log actions of your users to your database.
 You can require this package through composer, just run the following line in your terminal.
 
 ```php
-composer require jorenvanhocht/tracert 1.*
+composer require jorenvanhocht/tracert 1.3-beta
 ```
 
 ### Service Provider
@@ -40,7 +40,7 @@ php artisan vendor:publish --tag="config"
 This package contains a migration file to create the table where all actions will be logged into. Run it by the following command:
 
 ```php
-php artisan migrate --path="jorenvanhocht/Tracert/Migrations"
+php artisan migrate --path="vendor/jorenvanhocht/Tracert/src/migrations"
 ```
 
 ## Configuration
