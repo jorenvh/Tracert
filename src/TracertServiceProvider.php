@@ -29,11 +29,11 @@ class TracertServiceProvider extends ServiceProvider {
     {
         // Publish the config file
         $this->publishes([
-            __DIR__.'/../Config' => config_path(),
+            __DIR__.'/../config' => config_path(),
         ], 'config');
 
         // Make the config file accessible even when the files are not published
-        $this->mergeConfigFrom(__DIR__.'/../Config/Tracert.php', 'Tracert');
+        $this->mergeConfigFrom(__DIR__.'/../config/Tracert.php', 'Tracert');
     }
 
 }

@@ -40,7 +40,7 @@ php artisan vendor:publish --tag="config"
 This package contains a migration file to create the table where all actions will be logged into. Run it by the following command:
 
 ```php
-php artisan migrate --path="vendor/jorenvanhocht/Tracert/src/migrations"
+php artisan migrate --path="vendor/jorenvanhocht/Tracert/database/Migrations"
 ```
 
 ## Configuration
