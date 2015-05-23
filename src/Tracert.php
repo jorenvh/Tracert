@@ -27,7 +27,7 @@ class Tracert
      * @param History $history
      * @param DatabaseManager $db
      */
-    public function __construct( $db, History $history)
+    public function __construct($db, History $history)
     {
         $this->db = $db;
         $this->history = $history;
