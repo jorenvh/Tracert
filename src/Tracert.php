@@ -7,7 +7,7 @@ class Tracert
 {
 
     /**
-     * @var DatabaseManager
+     * @var \Illuminate\Database\Connection
      */
     protected $db;
 
@@ -22,14 +22,12 @@ class Tracert
     protected $history;
 
     /**
-     * Construct the class
-     *
-     * @param History $history
      * @param DatabaseManager $db
+     * @param History $history
      */
-    public function __construct($db, History $history)
+    public function __construct(DatabaseManager $db, History $history)
     {
-        $this->db = $db;
+        $this->db = $db->connection();
         $this->history = $history;
         $this->config = objectify(config('Tracert'));
     }
