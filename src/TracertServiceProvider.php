@@ -33,7 +33,7 @@ class TracertServiceProvider extends ServiceProvider {
         ], 'config');
 
         // Make the config file accessible even when the files are not published
-        $this->mergeConfigFrom(__DIR__.'/../config/Tracert.php', 'Tracert');
+        $this->mergeConfigFrom(__DIR__.'/../Config/Tracert.php', 'Tracert');
     }
 
 }
